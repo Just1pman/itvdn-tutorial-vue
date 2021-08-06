@@ -54,7 +54,6 @@ export default {
     watch: {
         currentPage: {
             handler(page) {
-                console.log(page, 'page change');
                 this.$store.dispatch('fetchCharacters', page)
             }
         }
